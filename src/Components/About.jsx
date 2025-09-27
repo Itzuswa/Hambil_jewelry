@@ -11,7 +11,7 @@ export default function About() {
                <h2 className="expertise">Our Expertise</h2>
 
             </div>
-            <div >
+            <div className='workspace-section'>
                <img src={ CAD} alt="Jewllery CAD Workspace"  className='CAD_workspace'/>
             </div>
          </div>

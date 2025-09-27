@@ -15,7 +15,7 @@ export default function Footer() {
 
             <div className="footer-contact-info-section">
                <span className="sec-1">
-                  <h6>CAD On Demand offers jewelry cad design services along with rendering and animation solutions.</h6>
+                  <h6 className="footer-detail-about-brand">CAD On Demand offers jewelry cad design services along with rendering and animation solutions.</h6>
                   <div className="contact-links">
                      <i class="fa-brands fa-facebook"></i>
                      <i class="fa-brands fa-instagram"></i>
@@ -24,7 +24,7 @@ export default function Footer() {
                </span>
                <div className="contact-sec">
 
-                  <h6>CONTACT US</h6>
+                  <h6 className="contact-us-title">CONTACT US</h6>
                   <div className="location">
                      <i class="fa-solid fa-location-dot"></i>
                      <p>
@@ -53,12 +53,16 @@ export default function Footer() {
 
 
 
-            <p>&copy; 2025 Hambil Jewelry Cad. All rights reserved.</p>
+            
             <div className="footer-links-section">
                <Link className="footer-links" to='/terms-conditions'>Terms and Conditions</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
                <Link className="footer-links" to='/privacy'>Privacy Policy</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
                <Link className="footer-links" to='/refund-cancellation'>Refund And Cancellation Policy</Link>
+
+
             </div>
+
+            <p className="copy-right-text">&copy; 2025 Hambil Jewelry Cad. All rights reserved.</p>
 
          </div>
       </div>

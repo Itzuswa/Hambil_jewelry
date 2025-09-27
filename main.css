@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .navbar * {
   color: white !important;
 }
@@ -26,49 +36,46 @@
 .div1 {
   display: flex;
   background-color: black;
-  height: 500px;
+  height: auto;
   position: relative;
   width: 100%;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
+  padding: 2rem;
 }
 
-
 .div2 {
-  margin-left: 100px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 70%;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 1;
 }
 
-
 .div3 {
-  height: 500px;
-  width: 500px;
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 
 .img-logo {
-  height: 300px;
-  width: 300px;
+  max-width: 70%;
+  height: auto;
 }
-
-
-
 
 .heading {
   color: #ffffff !important;
-  position: relative;
-  left: 0;
-  font-size: 45px;
+  width: 100%;
   font-weight: bold;
+}
+
+.heading-title {
+  font-size: 2rem !important;
 }
 
 .brand {
@@ -85,23 +92,31 @@
 
 .top-buttons {
   border-radius: 2.5rem;
-  height: 3.75rem;
-  width: 9.375rem;
-  font-size: 1.125rem;
+  font-size: 14px;
   font-weight: bolder;
+  border: 2px solid #d4af37;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  height: 2.5rem;
+  min-width: 8.375rem;
 }
+
+.top-buttons:hover{
+  background-color: #d4af37;
+  color: black;
+}
+
 
 
 .cards {
   display: flex;
   align-items: stretch;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
-  gap: 50px;
-  padding: 0.5rem;
+  gap: 3.125rem;
+  padding: .5rem;
   margin: 1.875rem;
 }
-
 
 .card-title {
   font-weight: bolder;
@@ -115,8 +130,8 @@
   color: white;
   background-color: rgba(77, 77, 77, 0.274);
   box-shadow: 0 .3125rem .9375rem rgba(0, 0, 0, 0.1);
-  width:100%;
-  max-width:100%;
+  width: 100%;
+  max-width: 100%;
   max-height: 25rem;
 }
 
@@ -124,7 +139,7 @@
   .cards {
     flex-direction: row;
     justify-content: space-between;
-    gap: 2.5rem;            
+    gap: 2.5rem;
     align-items: stretch;
     flex-wrap: nowrap;
   }
@@ -156,7 +171,10 @@
 .portfolio-buttons {
   margin-top: 30px;
   display: flex;
-  gap: 30px;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
 }
 
 .portfolio-button {
@@ -164,8 +182,10 @@
   background-color: rgba(255, 255, 255, 0);
   border-radius: 30px;
   color: white;
-  height: 50px;
-  min-width: 150px;
+  font-size:14px;
+  font-weight:bolder;
+  height: 30px;
+  min-width: 100px;
 }
 
 .portfolio-button:hover {
@@ -174,31 +194,42 @@
 }
 
 .About-expe {
-  height: 300px;
-  width: 700px;
+  height:auto;
+  width: 100%;
+  max-width: 700px;
   font-size: 18px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.workspace-section{
+  margin-top: 20px;
 }
 
 .About-Section {
   display: flex;
+  flex-direction:column;
+  margin-top:20px;
   justify-content: space-around;
   align-items: center;
-  padding: 40px;
+  gap:7px;
 }
 
 .About {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   color: white;
   background-color: rgb(0, 0, 0);
+  height:auto;
 }
-
-
-
 
 .About-title,
 .expertise {
   font-weight: 900;
+  font-size:1.5rem;
 }
 
 .contact-info {
@@ -216,13 +247,15 @@
 }
 
 .CAD_workspace {
-  height: 25rem;
+  height: 250px;
+  width: auto;
   border-radius: 1.25rem;
   border: .125rem solid rgba(255, 255, 255, 0.527);
 }
 
 .Contact-title {
   font-weight: 900;
+  font-size:24px;
 }
 
 .contact-card {
@@ -251,7 +284,7 @@
   margin-top: 1.875rem;
   background-color: #000000e0;
   box-shadow: .625rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
-  height: 31.25rem;
+  height: auto;
   width: 100%;
 }
 
@@ -305,6 +338,7 @@
 
 .brand-title {
   color: #ffdb67 !important;
+  font-size:24px;
 }
 
 .page-link,
@@ -319,12 +353,11 @@ a {
 Link:focus {
   color: white;
   border: white;
-
 }
 
 .page-link,
 Link:active {
-  border: white
+  border: white;
 }
 
 .page-link,
@@ -332,10 +365,8 @@ Link:hover {
   color: white;
 }
 
-
 .arrow-left,
 .arrow-right {
-
   font-size: 1.125rem;
 }
 
@@ -356,9 +387,8 @@ Link:hover {
   box-shadow: .3125rem .3125rem 1.875rem rgba(228, 228, 228, 0.171);
 }
 
-
 .work {
-  height: 31.25rem;
+  height: auto;
   padding: .625rem;
   justify-content: center;
   color: white;
@@ -374,7 +404,7 @@ Link:hover {
 .work-title {
   text-align: center;
   margin-top: 1.25rem;
-  font-size:24px !important;
+  font-size: 24px !important;
 }
 
 .working-info,
@@ -385,33 +415,46 @@ Link:hover {
 }
 
 .work-info {
-  width:100%;
-  padding:30px;
+  text-align: justify;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
   font-weight: 500;
   font-size: 1rem;
 }
+
 
 .footer-contact-info-section {
   margin-top: 3.125rem;
   margin-bottom: 3.125rem;
   display: flex;
-  justify-content: space-between;
-  gap: 6.25rem;
+  flex-direction:column;
+  gap:20px;
+  justify-content: space-around;
+  width: 100%;
+  padding:30px;
+  font-size:14px ;
+}
+
+.footer-detail-about-brand{
+  font-size:14px ;
 }
 
 .sec-1 {
   display: inline-block;
-  width: 30vw;
-  height: 80%;
+  margin-bottom: 70px;
+  height: auto;
 }
-
+.copy-right-text{
+  margin-top: 30px;
+}
 .contact-sec {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 1.25rem;
-  width: 30vw;
-  height: 80%;
+  /* width: 50vw; */
+  height: auto;
 }
 
 .email {
@@ -450,7 +493,6 @@ Link:hover {
 .phone p {
   margin: 0;
   display: inline;
-
 }
 
 .contact-links {
@@ -464,7 +506,7 @@ Link:hover {
   gap: .625rem;
   position: relative;
   bottom: 0;
-
+  margin-top: 20px;
 }
 
 .footer-logo-brand h1 {
@@ -473,8 +515,8 @@ Link:hover {
 }
 
 .footer-logo {
-  height: 5rem;
-  width: 5rem;
+  height: 50px;
+  width: 50px;
   filter: brightness(120%) contrast(130%);
 }
 
@@ -483,14 +525,25 @@ Link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.5rem;
+  height: 3.5rem;
   width: 100%;
+  padding: 20px;
+}
+
+.contact-us-title{
+  font-weight: bolder !important;
+  font-size:20px;
 }
 
 .footer-links {
   font-size: .8125rem;
+  padding-left:10px ;
   font-weight: 500 !important;
   color: rgb(197, 197, 197) !important;
+}
+.footer-links:hover{
+  text-decoration: 2px underline;
+  text-decoration-color: #d4af37;
 }
 
 .contact-links {
@@ -502,7 +555,6 @@ Link:hover {
 
 .privacy-page {
   height: 25rem;
-
   color: white;
   display: flex;
   justify-content: center;
