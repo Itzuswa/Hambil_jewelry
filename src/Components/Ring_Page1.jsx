@@ -45,7 +45,7 @@ export default function Ring_Page1() {
 
       <div className="Rings-page">
          {
-            rings.map((ring) => (< Ring_Card ring1={ring} />))
+            rings.map((ring, index) => (< Ring_Card ring1={ring} key={ index} />))
          }
       </div>
       <div className="pagination">

@@ -8,7 +8,6 @@ export default function About() {
                <p>
                   With years of experience in jewelry CAD design, we specialize in creating stunning, detailed jewelry pieces using industry-leading software like ZBrush and MatrixGold. Our expertise covers everything from classic designs to contemporary pieces, ensuring each creation meets the highest standards of craftsmanship.
                </p>
-               <h2 className="expertise">Our Expertise</h2>
 
             </div>
             <div className='workspace-section'>

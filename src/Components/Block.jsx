@@ -1,5 +1,6 @@
 
 
+import { Link } from 'react-router-dom'
 import Logo4 from './../assets/Front4.jpg'
 
 export default function Block() {
@@ -16,8 +17,8 @@ export default function Block() {
                
                <p className="brand" >ZBrush & MatrixGold Specialists</p>
                <div className="buttons">
-                  <button className="btn  top-buttons">View Portfolio</button>
-                  <button className="btn  top-buttons">Get Quote</button>
+                  <button className="btn  top-buttons" ><a href="#view-portfolio">View Portfolio</a></button>
+                  <button className="btn  top-buttons"><Link to='/register'>Get Quote</Link></button>
                </div>
             </div>
 

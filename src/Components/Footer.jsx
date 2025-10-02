@@ -15,30 +15,30 @@ export default function Footer() {
 
             <div className="footer-contact-info-section">
                <span className="sec-1">
-                  <h6 className="footer-detail-about-brand">CAD On Demand offers jewelry cad design services along with rendering and animation solutions.</h6>
+                  <h6 className="footer-detail-about-brand">Hamil Jewlery CAD offers jewelry cad design services along with rendering and animation solutions.</h6>
                   <div className="contact-links">
-                     <i class="fa-brands fa-facebook"></i>
-                     <i class="fa-brands fa-instagram"></i>
-                     <i class="fa-brands fa-youtube"></i>
+                     <i className="fa-brands fa-facebook"></i>
+                     <i className="fa-brands fa-instagram"></i>
+                     <i className="fa-brands fa-youtube"></i>
                   </div>
                </span>
                <div className="contact-sec">
 
                   <h6 className="contact-us-title">CONTACT US</h6>
                   <div className="location">
-                     <i class="fa-solid fa-location-dot"></i>
+                     <i className="fa-solid fa-location-dot"></i>
                      <p>
-                        Meevira, Suite 101, Jayshree Akshaya, IC Colony, Borivali (W),Mumbai – 400103, India
+                        Ghalib Road, Gulberg 3 Lahore , Pakistan
                      </p>
                   </div>
                   <div className="phone">
-                     <i class="fa-solid fa-phone"></i>
+                     <i className="fa-solid fa-phone"></i>
                      <p>
-                        +91-9833885929
+                        +923278535643
                      </p>
                   </div>
                   <div className="email">
-                     <i class="fa-regular fa-envelope"></i>
+                     <i className="fa-regular fa-envelope"></i>
                      <p>
                         intriguity@gmail.com
                      </p>

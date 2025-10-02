@@ -9,6 +9,9 @@ import Ring_Page2 from './Components/Ring_Page2'
 import Ring_Page3 from './Components/Ring_Page3'
 import Ring_Page4 from './Components/Ring_Page4'
 import Privacy from './Components/Footer_Link'
+import RegisterForm from './Components/RegisterForm'
+import RegisterPage from './Components/RegisterPage'
+import AllPage from './Components/AllPage'
 function App() {
   return (
     <>
@@ -16,7 +19,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-
+          <Route path='all' element={ <AllPage/>} />
+          <Route path='register' element={<RegisterPage/>} />
           <Route path="rings" element={<Rings />} >
             <Route path='ring1' element={<Ring_Page1 />} />
             <Route path='ring2' element={<Ring_Page2 />} />
