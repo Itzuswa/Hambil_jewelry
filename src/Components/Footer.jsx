@@ -40,7 +40,7 @@ export default function Footer() {
                   <div className="email">
                      <i className="fa-regular fa-envelope"></i>
                      <p>
-                        intriguity@gmail.com
+                        info@gmail.com
                      </p>
                   </div>
 

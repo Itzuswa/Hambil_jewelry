@@ -9,13 +9,14 @@ export default function Portfolio() {
             <div className="portfolio-buttons">
                <button className="portfolio-button " ><Link to='/all'>All</Link ></button>
                <button className="portfolio-button">ZBrush</button>
-               <button className="portfolio-button">Matrix Gold</button>
+               <button className="portfolio-button"><Link to="/matrix-gold/page1">Matrix Gold</Link></button>
+               <button className="portfolio-button"><Link to="/men-rings/page1">Men Rings</Link></button>
                <button
                   className="portfolio-button"
                >
                   <Link to="/rings/ring1"> Rings</Link>
                </button>
-               <button className="portfolio-button">Pendants</button>
+               <button className="portfolio-button"><Link to="/pendants/page1">Pendants</Link></button>
             </div>
          </div>
       </div>

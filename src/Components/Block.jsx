@@ -17,8 +17,8 @@ export default function Block() {
                
                <p className="brand" >ZBrush & MatrixGold Specialists</p>
                <div className="buttons">
-                  <button className="btn  top-buttons" ><a href="#view-portfolio">View Portfolio</a></button>
-                  <button className="btn  top-buttons"><Link to='/register'>Get Quote</Link></button>
+                  <button className=" top-buttons" ><a href="#view-portfolio">View Portfolio</a></button>
+                  <button className="  top-buttons"><Link to='/register'>Get Quote</Link></button>
                </div>
             </div>
 
