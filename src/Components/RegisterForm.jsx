@@ -32,8 +32,8 @@ export default function RegisterForm() {
 
 
                
-               <div class="form-floating mb-3">
-                  <textarea class="form-control" placeholder="Comments"></textarea>
+               <div className="form-floating mb-3">
+                  <textarea className="form-control" placeholder="Comments"></textarea>
                   
                </div>
 

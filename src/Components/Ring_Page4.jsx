@@ -81,7 +81,7 @@ export default function Ring_Page4() {
       </div>
       <div className="pagination">
         
-         <div><Link className="page-link" to={'/rings/ring3'}> <i class="fa-solid fa-angle-left arrow-left"></i></Link></div>
+         <div><Link className="page-link" to={'/rings/ring3'}> <i className="fa-solid fa-angle-left arrow-left"></i></Link></div>
          <div><Link className="page-link" to={'/rings/ring1'}>1</Link></div>
          <div><Link className="page-link" to={'/rings/ring2'}>2</Link></div>
          <div><Link className="page-link" to={'/rings/ring3'}>3</Link></div>

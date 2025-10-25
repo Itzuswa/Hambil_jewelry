@@ -84,12 +84,12 @@ export default function Ring_Page3() {
          }
       </div>
       <div className="pagination">
-         <div><Link className="page-link" to={'/rings/ring2'}> <i class="fa-solid fa-angle-left arrow-left"></i></Link></div>
+         <div><Link className="page-link" to={'/rings/ring2'}> <i className="fa-solid fa-angle-left arrow-left"></i></Link></div>
          <div><Link className="page-link" to={'/rings/ring1'}>1</Link></div>
          <div><Link className="page-link" to={'/rings/ring2'}>2</Link></div>
          <div style={{ borderBottom: ' 2px solid white' }}><Link className="page-link" to={'/rings/ring3'}>3</Link></div>
          <div><Link className="page-link" to={'/rings/ring4'}>4</Link></div>
-         <div><Link className="page-link" to={'/rings/ring4'}><i class="fa-solid fa-angle-right arrow-right"></i></Link></div>
+         <div><Link className="page-link" to={'/rings/ring4'}><i className="fa-solid fa-angle-right arrow-right"></i></Link></div>
       </div >
    </>)
 }

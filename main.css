@@ -576,14 +576,37 @@ button[type="submit"]:active {
 }
 
 .Rings-page {
-  display: flex;
-  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
   background-color: #000000;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 1.875rem;
   font-size: 18px;
-  gap: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .Rings-page {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .Rings-page {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 28px 28px 12px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Rings-page {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 32px 32px 16px;
+  }
 }
 
 .logo-section {

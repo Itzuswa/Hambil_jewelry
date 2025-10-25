@@ -22,3 +22,4 @@ export default function Pendent_Page1() {
       </div >
    </>);
 }
+

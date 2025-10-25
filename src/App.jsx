@@ -14,13 +14,13 @@ import Pendent_Page2 from './Components/Pendent_Page2'
 import Pendent_Page3 from './Components/Pendent_Page3'
 import Pendent_Page4 from './Components/Pendent_Page4'
 import MatrixGold from './Components/MatrixGold'
-import Matrix_Page1 from './Components/Matrix_Page1'
-import Matrix_Page2 from './Components/Matrix_Page2'
-import Matrix_Page3 from './Components/Matrix_Page3'
-import Matrix_Page4 from './Components/Matrix_Page4'
+import MatrixGold_Page1 from './Components/MatrixGold_Page1'
+import MatrixGold_Page2 from './Components/MatrixGold_Page2'
+import MatrixGold_Page3 from './Components/MatrixGold_Page3'
+import MatrixGold_Page4 from './Components/MatrixGold_Page4'
 import MenRings from './Components/MenRings'
-import MenRings_Page1 from './Components/MenRings_Page1'
-import MenRings_Page2 from './Components/MenRings_Page2'
+import MenRingsGold_Page1 from './Components/MenRingsGold_Page1'
+import MenRingsGold_Page2 from './Components/MenRingsGold_Page2'
 import Privacy from './Components/Footer_Link'
 import RegisterForm from './Components/RegisterForm'
 import RegisterPage from './Components/RegisterPage'
@@ -53,6 +53,7 @@ function App() {
               <Rings />
             </PageContainer>
           }>
+            <Route index element={<Navigate to="ring1" replace />} />
             <Route path='ring1' element={<Ring_Page1 />} />
             <Route path='ring2' element={<Ring_Page2 />} />
             <Route path='ring3' element={<Ring_Page3 />} />
@@ -64,6 +65,7 @@ function App() {
               <Pendents />
             </PageContainer>
           }>
+            <Route index element={<Navigate to="page1" replace />} />
             <Route path='page1' element={<Pendent_Page1 />} />
             <Route path='page2' element={<Pendent_Page2 />} />
             <Route path='page3' element={<Pendent_Page3 />} />
@@ -75,10 +77,11 @@ function App() {
               <MatrixGold />
             </PageContainer>
           }>
-            <Route path='page1' element={<Matrix_Page1 />} />
-            <Route path='page2' element={<Matrix_Page2 />} />
-            <Route path='page3' element={<Matrix_Page3 />} />
-            <Route path='page4' element={<Matrix_Page4 />} />
+            <Route index element={<Navigate to="page1" replace />} />
+            <Route path='page1' element={<MatrixGold_Page1 />} />
+            <Route path='page2' element={<MatrixGold_Page2 />} />
+            <Route path='page3' element={<MatrixGold_Page3 />} />
+            <Route path='page4' element={<MatrixGold_Page4 />} />
           </Route>
 
           <Route path="men-rings" element={
@@ -86,8 +89,9 @@ function App() {
               <MenRings />
             </PageContainer>
           }>
-            <Route path='page1' element={<MenRings_Page1 />} />
-            <Route path='page2' element={<MenRings_Page2 />} />
+            <Route index element={<Navigate to="page1" replace />} />
+            <Route path='page1' element={<MenRingsGold_Page1 />} />
+            <Route path='page2' element={<MenRingsGold_Page2 />} />
           </Route>
 
           <Route path='privacy' element={
